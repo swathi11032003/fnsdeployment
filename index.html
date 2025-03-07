@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>media queries</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            .parent{
+                height: 100vh;
+            }
+            .header{
+                height: 10%;
+                background-color: lightblue;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header_logo{
+                font-size: 3vw;
+            }
+
+            .header_menu{
+                display: flex;
+                gap: 20px;
+            }
+
+            .main{
+                height: 80%;
+                display: flex;
+            }
+
+            .main_img{
+                flex: 1;
+                background-image: url(ama.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .main_info{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .main_info_1{
+                font-size: 3vw;
+            }
+
+            .main_info_2,.main_info_3, .main_info_4, .main_info_5{
+                font-size: 2vw;
+            }
+            .footer{
+                height: 10%;
+                display: flex;
+                gap: 20px;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 30px;
+                background-color: lightblue;
+            }
+            @media(max-width:600px){
+                .header_menu{
+                    display: none;
+                }
+                .header{
+                    justify-content: center;
+                    align-items: center;
+                }
+                .header_logo{
+                    font-size: 8vw;
+                }
+                .main{
+                    flex-direction: column;
+                }
+                .main_info_2,.main_info_3, .main_info_4, .main_info_5{
+                    display: none;
+                }
+                .main_info_1{
+                    font-size: 5vw;
+                    text-align: center;
+                }
+                .footer{
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+    
+        </style>
+    </head>
+    <body>
+        <div calss="parent">
+            <div class="header">
+                <div class="header_logo">finishing school</div>
+                <div class="header_menu">
+                    <a href="#"><i class="fa fa-home">home</i></a>
+                    <a href="#"><i class="fa fa-info">info</i></a>
+                    <a href="#"><i class="fa fa-phone">phone</i></a>
+                    <a href="#"><i class="fa fa-sign-in">sign-in</i></a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main_img"></div>
+                <div class="main_info">
+                    <p class="main_info_1">fullstack java</p>
+                    <p class="main_info_2">java</p>
+                    <p class="main_info_3">hyderabad</p>
+                    <p class="main_info_4">cybertowers</p>
+                    <p class="main_info_5">5000081</p>
+                </div>
+            </div>
+            <div class="footer">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-goole"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+
+    </body>
+</html>
