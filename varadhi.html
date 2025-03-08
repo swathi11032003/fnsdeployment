@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            vaaradhi
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .body{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+
+            }
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 20% 70%;
+                grid-template-columns: 100%;
+            }
+            .preheader{
+                background-color:green;
+                text-align: center;
+                color: white;
+                padding: 20px;
+                grid-column: 1;
+                grid-row: 1/2;
+            }
+            .marquee{
+                text-align: center;
+            }
+            .header{
+                background-color: yellow;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                align-items: center;
+                grid-column: 1;
+                grid-row: 2/3;
+                font-size: 20px;   
+            }
+            .navbar {
+            background-color: yellow;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            text-decoration: underline;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: yellow;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+            .main{
+                background-color:green ;
+                grid-column: 1;
+                grid-row: 3/4;
+            }
+            .item2{
+                display: flex;
+                gap: 20px;
+            }
+            .item1{
+                display: flex;
+                gap: 20px;
+            }
+            
+            .header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 95%; 
+    padding: 20px; 
+    gap: 50px;
+}
+.text-container {
+    max-width: 70%; 
+}
+.heading {
+    font-weight: bold;
+    font-size: 8vh;
+    margin-bottom: 10px;
+}
+.view-all-btn {
+    background-color: yellow; 
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.view-all-btn:hover {
+    background-color: #e6b800;
+}
+        .table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 20px; 
+    text-align: center;
+    display: flex;
+    
+
+   
+    
+}
+
+.table img {
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+    margin: 30px;
+    padding: 50px;
+    
+
+}
+.third{
+    border-radius: 20px;
+}
+.swa{
+                color: white;
+                background-color: green;
+                display: flex;
+                justify-content: space-between;
+            }
+            .button{
+                background-color: #ffcc00; 
+                color: black;
+                border: none;
+                padding: 20px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 50px;
+                height: 50px;
+                width: 200px;
+            }
+            .b{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+            }
+            .second{
+                background-color: green;
+            }
+            .extra{
+                justify-content: space-between;
+            }
+            .block{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 50px;
+                justify-content: space-between;
+                gap: 50px;
+            }
+            .text{
+                text-align: center;
+                padding: 20px;
+            }
+            .text h2{
+                font-size: 30px;
+                margin: 0px;
+            }
+            .text h1{
+                font-size: 80px;
+                font-weight: bold;
+                margin: 10px;
+            }
+            .text p{
+                font-size: 18px;
+            }
+            .product{
+                width: 500px;
+                height: 500px;
+                display: block;
+                border: none;
+                box-shadow: none;
+
+
+            }
+            .faq{
+                justify-content: space-between;
+            }
+            .video{
+                justify-content: space-between;
+            }
+            .customer care{
+                display: block;
+                align-items: initial;
+            }
+
+        </style>
+
+    </head>
+    <body>
+           <div class="parent">
+            <div class="preheader">
+              <marquee direction="up" class="marquee"><b> < free shipping on all orders above <i class="fa fa-rupee"></i>999 > </b></marquee>
+            </div>
+            <div class="header">
+               <img src="https://vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&width=300 " alt="vaaradhi" height="90px" width="180px" style="padding-inline-start: 0px;">
+                <div class="item2" style="color: black;">
+                    <div class="navbar">
+                        <a href="#">Home</a>
+                        <div class="dropdown">
+                            <a href="#">View Collections </a>
+                            <div class="dropdown-content">
+                                <a href="#">Honey</a>
+                                <a href="#">Ghee</a>
+                                <a href="#">Pickles</a>
+                                <a href="#">Seeds</a>
+                                <a href="#">Sweets & Snacks</a>
+                                <a href="#">Sweetener & Salts</a>
+                                <a href="#">Cereals</a>
+                                <a href="#">Millets</a>
+                                <a href="#">Oils</a>
+                                <a href="#">Pulses</a>
+                                <a href="#">Rice</a>
+                            </div>
+                        </div>
+                        <a href="#">Shop All</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Track Your Order</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="item1">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-user"></i>
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+            </div>
+            <div class="mainvaaradh">
+                <img src="https://vaaradhifarms.com/cdn/shop/files/varadhi_farms_honey_-v1_-_web_final.jpg?v=1733085382&width=2000" alt="vaaradhi" height="500px" width="1505px">
+            </div>
+            <div class="header-container">
+                <div class="text-container">
+                    <b><div class="heading">Shop Our Customers Favorite</div></b>
+                    <div class="heading__text">These are our best sellers you'll fall in love with too.</div>
+                </div>
+                <ul><button class="view-all-btn">View All ➝</button></ul>
+            </div>
+            <br>
+         <div><table align="center"
+            cellpadding="20px"
+            cellspacing="20px">
+            <div class="table">
+            <tr>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/Ghee_HighRes.jpg?"width="300" height="300" alt="error"><div class="caption"><b>A2 Desi Cow Cultured Ghee</b><p style="color: red;"> From RS 925.00 <strike style="color: black;"> Rs.1,000.00 </strike></p><div class="star1"> 615 reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/Honey2.png?"width="300" height="300" alt="error"><div class="caption"><b>Farm Fresh Raw Natural Honey</b><p style="color: gray;"> From RS 475.00</p><div class="star"> reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/WhatsAppImage2024-04-26at1.21.52AM.jpg?"  alt="error" width="300" height="300"><div class="caption"><b>Wild Raw Forest Honey</b><p style="color: grey;"> From RS 575.00</p><div class="star"> reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/WhatsAppImage2024-03-26at7.23.32PM.jpg?" alt="error" width="300" height="300"><div class="caption"><b>Small Bee Forest Honey</b><p style="color: grey;"> From RS 1249.00</p><div class="star"> reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td></tr>
+            <tr><td><img src="//vaaradhifarms.com/cdn/shop/files/deepixelstudios_wild_turmeric_powder_in_a_pouch_1080x1080_a5f1c16c-5f91-4fc1-b586-b6b292eb5c21.png?" alt="error" width="300" height="300"><div class="caption"><b>Unprocessed Natural Turmeric</b><p style="color: grey;"> From RS 300.00</p><div class="star">reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div> </div></td>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/Adityark_a_bag_of_a_tan_colored_product_filled_with_turmeric_ki_30bdb482-db0c-4404-8b6c-cb59bec40502.png" alt="error" width="300" height="300"><div class="caption"><b>Forest Turmeric powder</b><p style="color: grey;"> From RS 199.00</p><div class="star"> reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/WhatsApp_Image_2024-09-24_at_11.20.47_PM.jpg?" alt="error" width="300" height="300" ><div class="caption"><b>Lakshman Phal Juice</b><p style="color: grey;"> From RS 780.00</p><div class="star"> reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td>
+            <td><img src="//vaaradhifarms.com/cdn/shop/files/42bellampowder.png? "  alt="error" width="300" height="300"><div class="caption"><b>Jaggery Powder</b><p style="color: grey;"> From RS 160.00</p><div class="star"> reviews<span style="color: rgb(241, 198, 40);">&starf;</span></div></div></td></tr>
+        </table>
+            </div>
+             <ul><div class="b"><button class="button">View All Products</button></div></ul>   
+       <br>
+        <div class="second">
+            <div class="second__head">
+                <h1 style="color: white; font-size: 50px; padding-left: 90px;">Explore Our Collections</h1>
+            </div>
+            <div class="second_head_text">
+                <p style="color: white; font-size: 20px; padding-left: 90px;">Find Your Favorites From Our Wide Range of Categories</p>
+                </div>
+                <table align="center"
+                cellpadding="20px"
+                cellspacing="20px">
+                    <div class="extra">
+                        <tr>
+                            <td><img src="//vaaradhifarms.com/cdn/shop/files/vaaradhi_farms.jpg?" alt="error" width="400px" height="400px" style="border-radius: 20px;"></td>
+                            <td><img src="//vaaradhifarms.com/cdn/shop/files/ecommified_Front-facing_close-up_eye-level_shot_of_a_plain_flat_22ecbd0e-a868-400f-851a-1b171609766c.png?" alt="error" width="400px" height="400px" style="border-radius: 20px;"></td>
+                            <td><img src="//vaaradhifarms.com/cdn/shop/files/pickle_collection_image_-_v1.png?" alt="error" width="400px" height="400px" style="border-radius: 20px;"></td><br>
+                        </tr>
+                
+                </table>
+                    <div>
+                        <tr>
+                            
+                            <td><img src="//vaaradhifarms.com/cdn/shop/files/sweet_and_snacks.jpg?" alt="error" width="400px" height="400px" style="padding-left: 45px; border-radius: 20px;"></td>
+                        </tr>
+                    </div>
+                    <ul><div class="b"><button class="button">View All Collections</button></div></ul>
+                </div>
+                </table>  
+                <div class="third">
+                    <table align="center"
+                    cellpadding="10px"
+                    cellspacing="10px">
+                <tr>
+                    <td><img src="//vaaradhifarms.com/cdn/shop/files/sweetner_and_salts_collection_image_varadhi_farms.jpg?"alt="error" width="500px" height="200px"  ></td>
+                <td rowspan="2"><img src="//vaaradhifarms.com/cdn/shop/files/Varadhi_farms_v1_oil_section_image-3.jpg?" alt="error" width="500px" height="500px">
+                </td></tr>
+                <tr>
+                    <td>
+               <img src="//vaaradhifarms.com/cdn/shop/files/seeds_collection_image_varadhi_farms-1.jpg?" alt="error" width="500px" height="200px"></td> </tr>
+                </table>
+            </div>  
+            <div class="swa" >
+                <h1 ><marquee>Free Shipping On Orders Above 999 </marquee></h1>
+                <h1 ><marquee>Free Shipping On Orders Above 999 </marquee></h1>   
+            </div>
+            <div class="block">
+                <img src="https://vaaradhifarms.com/cdn/shop/files/Honey2.png?v=1698854744&width=800" alt="Natural Honey" class="product">
+                <div class="text"><h2>Did you Know?</h2>
+                    <h1>90%</h1><p><b>of Honey and Ghee's use is to Enhance meals.</b></p></div>
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/Ghee_HighRes.jpg?v=1698928244&width=600" alt="A2 Desi cow cultured ghee"  class="product">
+            </div>
+            <div class="about"
+            cell spacing="20px"
+            cell padding="20px">
+               <table class="video" style="padding: 20px;">
+                <td style="padding: 20px;border-radius: 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/KTd84z8Qc9M?si=6JlFvNCVyVaNmitO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td style="text-align: center; width: 700px; background-color: #ffcc00; border-radius: 20px;"><h1 style="font-size: 50px; ">About Us</h1>
+                    <p >Welcome to Vaaradhi Farms! I am Nethra and I am extremely passionate about healthy living and sustainable food practices.</p>
+                    <p >I am committed to making a positive impact on the world through our business.</p>
+                    <p >Thank you for choosing our organic food products, and I look forward to serving you soon.</p></td>
+               </table>
+            </div>
+            <div class="faq" style="background-color: green; text-align: center;">
+                <table cellpadding="50px" cellspacing="50px">
+                    <td style="color: white;" >
+                        <h1>FAQ</h1>
+                        <p style="font-size: 20px;">Check out the most common questions our customers asked and if <br> you Still have questions, Contact our customer support.</p>
+                    </td>
+                    <td style="background-color: #ffcc00; font-size: 20px; text-align: initial; padding-right: 20px; border-radius: 20px;">
+                        <p>how much time does it take for shipping ?</p>
+                        <p>do you accept returns and refunds ?</p>
+                        <p>what payment gateways do you support ?</p>
+                    </td>
+                </table>
+            </div>
+            <div class="end" style="background-color: #ffcc00;">
+                <table style="padding: 0px;" >
+                    <td class="Customer care" style="justify-content: initial;"><h2>Customer Care</h2>
+                        FAQ <br>
+                        Shipping Policy <br>
+                        Refund Policy <br>
+                        Cancellation Policy <br>
+                        Privacy Policy  <br>
+                        Terms of Service <br>
+                        Contact Information <br>
+                        Wild forest honey certificate <br>
+                        Dark Forest Honey Certificate <br>
+                    </td>
+                    <td colspan="2" style="padding: 50px;">
+                        <h2>Contact info</h2>
+                       <p> Trade Name : VAARADHI FARMS PRIVATE LIMITED</p>
+
+                       <p>Email Support : vaaradhifarms@gmail.com</p>
+
+                       <p>Customer Care Number :</p>
+
+                       <p>+91 89770 21193</p>
+
+                       <p>+91 89770 21197</p>
+
+                       <p>Customer Support Timings : 10:30am to 6:30pm</p>
+
+                       <p>Address : Manikonda, Hyderabad, Telangana , Pin - 500089</p>
+
+                       <p>FSSAI : 23623028001252</p>
+
+                       <p>Legal Name : VAARADHI FARMS PRIVATE LIMITED</p>
+
+<p>Registered Address: Building No./Flat No.: Sy. No. 81,Plot No-161,Sector-1-Block-2 <br>
+Name Of Premises/Building: Alkapur Township <br>
+Road/Street: Road No.25 <br>
+Locality/Sub Locality: Neknampur <br>
+City/Town/Village: Hyderabad <br>
+District: Rangareddy <br>
+State: Telangana <br>
+PIN Code: 500089</p>
+                    </td>
+                </table>
+            </div>
+        </div>
+        </div> 
+        
+    </body>
+</html>
